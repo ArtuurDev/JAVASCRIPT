@@ -16,3 +16,7 @@ Em java o comando typeof para vor o tipo de dado
 && -- and
 || -- or
 ! -- not
+
+// instalaçao 
+
+pip install yarn --global yarn

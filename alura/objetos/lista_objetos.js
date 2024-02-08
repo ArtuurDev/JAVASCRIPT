@@ -9,6 +9,7 @@ const cliente = {
 cliente.enderecos = [{
     rua: 'rua antero gaspa rorigues',
     numero: 262,
+    apartamento: false
 }]
 
 cliente.enderecos.push({
@@ -16,8 +17,8 @@ cliente.enderecos.push({
     apartamento: true
 })
 
-
-let listaApartamentos = cliente.enderecos.filter((endereco) => 
+let listaApartamentos = cliente.enderecos.filter((endereco)=> 
     endereco.apartamento === true
 )
+
 console.log(listaApartamentos)

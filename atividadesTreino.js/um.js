@@ -18,3 +18,13 @@ for (let num in numeros) {
 }
 console.log(maior)
 console.log(menor)
+
+
+let fact = 7
+let acumlador = 1
+
+for (i=0;fact!=i; fact--) {
+    acumlador *= fact
+
+}
+console.log(acumlador)

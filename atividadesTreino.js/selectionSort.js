@@ -11,6 +11,3 @@ const arrayObjeto = [{
     preco:45},
     {titulo:'python',
     preco:20}]
-
-console.log(arrayObjeto)
-

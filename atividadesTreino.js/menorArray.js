@@ -13,15 +13,14 @@ const arrayObjeto = [{
     preco:20}]
 
 console.log(arrayObjeto)
-
 let maisBarato = 0
-
-for (atual=0; atual < arrayObjeto.length; atual++) {
-    if (atual===0){
-        maisBarato = arrayObjeto[atual].preco
-    } else if(arrayObjeto[atual].preco < maisBarato) {
+for (let atual = 0; atual < arrayObjeto.length; atual++) {
+    if (atual === 0) {
+        maisBarato = arrayObjeto[atual]
+    } else if (arrayObjeto[atual].preco < maisBarato.preco) {
         maisBarato = arrayObjeto[atual]
 
     }
+}
 
-} console.log(`o titulo bais barato é ${maisBarato.titulo} e o preço é ${maisBarato.preco}`)
+console.log(maisBarato)

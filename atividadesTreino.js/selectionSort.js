@@ -1,4 +1,4 @@
-const arrayObjeto = [{
+let livros = [{
     titulo: 'javaScript',
     preco:25},
     {titulo:'php',
@@ -11,3 +11,23 @@ const arrayObjeto = [{
     preco:45},
     {titulo:'python',
     preco:20}]
+
+
+let array = [6,2,1]
+
+
+let aux = 0
+
+for (let atual = 0; atual < livros.length; atual++) {
+    for (let maisUm = atual + 1; maisUm < livros.length; maisUm++) {
+        if (livros[atual].preco > livros[maisUm].preco) {
+            aux = livros[maisUm]
+
+            livros[maisUm] = livros[atual]
+            livros[atual] = aux
+            
+
+        }
+}}
+
+console.log(livros)

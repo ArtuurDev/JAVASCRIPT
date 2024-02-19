@@ -24,3 +24,4 @@ for (let atual = 0; atual < arrayObjeto.length; atual++) {
 }
 
 console.log(maisBarato)
+

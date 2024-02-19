@@ -11,3 +11,4 @@ for (let i=0; num!=i; num--) {
 }
 
 console.log(resultado)
+

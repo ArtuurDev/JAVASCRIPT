@@ -1,6 +1,7 @@
 class Animal{
-    constructor(tipo) {
+    constructor(tipo,cor) {
         this.tipo = tipo
+        this.cor = cor
     }
     obterTipo() {
         return  this.tipo
@@ -8,6 +9,6 @@ class Animal{
 }
 
 
-let animal = new Animal('mamifero')
+let animal = new Animal('mamifero', 'verde')
 console.log(animal)
 

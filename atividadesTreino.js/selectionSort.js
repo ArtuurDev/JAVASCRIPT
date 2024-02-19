@@ -15,6 +15,18 @@ let livros = [{
 
 let array = [6,2,1]
 
+let maisBarato = 0 
+for (let atual = 0; atual < array.length; atual++) {
+    if (atual === 0) {
+        maisBarato = array[atual]
+    } else if (array[atual] < maisBarato) {
+        maisBarato = array[atual]
+    }
+
+} console.log(maisBarato)
+
+
+
 
 let aux = 0
 
@@ -25,9 +37,10 @@ for (let atual = 0; atual < livros.length; atual++) {
 
             livros[maisUm] = livros[atual]
             livros[atual] = aux
-            
 
         }
-}}
+    }
+}
 
 console.log(livros)
+

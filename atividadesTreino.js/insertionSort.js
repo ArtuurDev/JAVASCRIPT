@@ -14,14 +14,5 @@ let livros = [{
 
 
     
-for (let atual = 0; atual < livros.length; atual++) {
-    let analise = atual
-    while (analise > 0 && livros[analise].preco < livros[analise -1].preco) {
-        let itenanalise = livros[analise]
-        let itemanterior = livros[analise -1]
-        livros[analise] = itemanterior
-        livros[analise -1] = itenanalise 
-        analise --
-    }
-}
+
 console.log(livros)

@@ -14,12 +14,13 @@ const arrayObjeto = [{
 
 console.log(arrayObjeto)
 let maisBarato = 0
-for (let atual = 0; atual < arrayObjeto.length; atual++) {
-    if (atual === 0) {
-        maisBarato = arrayObjeto[atual]
-    } else if (arrayObjeto[atual].preco < maisBarato.preco) {
-        maisBarato = arrayObjeto[atual]
 
+for (let i= 0; i < arrayObjeto.length; i++) {
+    if (i === 0) {
+        maisBarato = arrayObjeto[i]
+
+    } else if (arrayObjeto[i].preco < maisBarato.preco ) {
+        maisBarato = arrayObjeto[i]
     }
 }
 

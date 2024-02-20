@@ -13,6 +13,21 @@ let livros = [{
     preco:20}]
 
 
-    
+
+for (let atual = 0; atual < livros.length; atual++) {
+    let analise = atual
+    while (analise >0 && livros[analise].preco < livros[analise -1].preco) {
+        itemAnalise = livros[analise]
+        itemAnterior = livros[analise -1]
+
+        livros[analise] = itemAnterior
+        livros[analise -1 ] = itemAnalise
+
+        analise--
+    }
+}
+
+
+
 
 console.log(livros)

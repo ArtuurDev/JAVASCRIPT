@@ -16,12 +16,12 @@ let livros = [{
 
 for (let atual = 0; atual < livros.length; atual++) {
     let analise = atual
-    while (analise >0 && livros[analise].preco < livros[analise -1].preco) {
-        itemAnalise = livros[analise]
+    while (analise > 0 && livros[analise].preco < livros[analise - 1].preco) {
         itemAnterior = livros[analise -1]
+        itemAnalise = livros[analise]
 
         livros[analise] = itemAnterior
-        livros[analise -1 ] = itemAnalise
+        livros[analise -1] = itemAnalise
 
         analise--
     }

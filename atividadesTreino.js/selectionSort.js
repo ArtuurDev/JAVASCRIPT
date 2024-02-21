@@ -31,15 +31,14 @@ for (let atual = 0; atual < array.length; atual++) {
 let aux = 0
 
 for (let atual = 0; atual < livros.length; atual++) {
-    for (let maisUm = atual + 1; maisUm < livros.length; maisUm++) {
+    for (let maisUm = atual +1; maisUm < livros.length; maisUm++) {
         if (livros[atual].preco > livros[maisUm].preco) {
             aux = livros[maisUm]
 
             livros[maisUm] = livros[atual]
             livros[atual] = aux
-
         }
-    } 
+    }
 }
 
 console.log(livros)

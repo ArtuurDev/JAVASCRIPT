@@ -5,10 +5,7 @@ const user = {
     info: function() {
         console.log(this.nome, this.cpf, this.role)
     }
-
 }
-
-
 const professor = {
     nome:'paulo junior',
     cpf: '123454321',
@@ -17,7 +14,6 @@ const professor = {
         console.log('aluno artur: nota 10')
     }
 }
-
 const professorJavaScript = {
     nome:'junior',
     cpf: '123454321',
@@ -26,7 +22,6 @@ const professorJavaScript = {
         console.log('aluno artur: nota 10')
     }
 }
-
 // herança de protótipo
 
 const exibirInfo = user.info.bind(user)

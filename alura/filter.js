@@ -7,3 +7,8 @@ const reprovados = alunos.filter((alunos, indice) => {
 
 })
 console.log(reprovados)
+
+alunos.filter((alunos, indice) => {
+    console.log(alunos, indice)
+})
+

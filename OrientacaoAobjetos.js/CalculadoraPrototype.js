@@ -3,7 +3,7 @@ const calculadora = {
     num2: 0,
     resultado: 0,
     emitirInfo: function () {
-        return `${this.num1}, ${this.num2}, ${this.resultado}`
+        return `primeiro numero ${this.num1}, segundo numero ${this.num2} resultado:  ${this.resultado}`
     }
 
 }
@@ -26,13 +26,11 @@ const soma = {
 }
 
 Object.setPrototypeOf(multiplica, calculadora)
-Object.setPrototypeOf(soma, multiplica)
+Object.setPrototypeOf(soma, calculadora)
 
 multiplica.num1 = 10
-multiplica.num2 = 123
-
+multiplica.num2 = 20
 console.log(multiplica.multiplicacao())
 console.log(multiplica.emitirInfo())
-
 console.log(soma.somar())
 console.log(soma.emitirInfo())

@@ -10,26 +10,33 @@ class Calculadora{
     constructor(num1, num2) {
         this.num1 = num1
         this.num2 = num2
-        this.soma = 0
-        this.multiplica = 0
+        this.resultado = 0
 
-    
     }
 
-    multiplicacao() {
-        this.multiplica = this.num1 * this.num2
-        return this.multiplica
+    get obterResultado() {
+        return this.resultado
     }
 
-    somar(){
-        this.soma = this.num1 + this.num2
-        return this.soma
+    get obterNumeros(){
+        return this.num1, this.num2
     }
+
+    somar() {
+        this.resultado = this.num1 + this.num2
+        return this.resultado
+    }
+
+    multiplicar() {
+        this.resultado = this.num1 * this.num2
+        return this.resultado
+    }   
+
 
 }
 
+let meuResultado = new Calculadora(10, 2)
+console.log(meuResultado.somar())
+console.log(meuResultado.multiplicar())
 
-let meuValor = new Calculadora(10, 78)
 
-console.log(meuValor.somar())
-console.log(meuValor.multiplicacao())

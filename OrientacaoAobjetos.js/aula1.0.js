@@ -36,3 +36,9 @@ nomeCliente.nomePessoa('artur')
 nomeCliente.sobrenomePessoa('santos')
 
 nomeCliente.nomeCompletopessoa()
+
+
+const hora1 = [60, 'minutos']
+console.log(hora1)
+
+console.log(`${hora1[0] - 60}`)

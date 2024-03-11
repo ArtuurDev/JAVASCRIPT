@@ -1,4 +1,4 @@
-let meuArray = [1,2,3,4,5,6,7,8,9,]
+let meuArray = [10,11,3,4,5,6,7,8,9,]
 
 console.log(meuArray)
 console.log(meuArray[5])
@@ -19,3 +19,19 @@ for (i in meuArray) {
 
 }
 console.table(novoArray)
+
+// selection sort
+
+let aux = 0
+for (let i = 0; i < meuArray.length; i++) {
+    for (let maisUm = i+1; maisUm < meuArray.length; maisUm++) {
+        if (meuArray[maisUm] < meuArray[i]) {
+            aux = meuArray[maisUm]
+
+            meuArray[maisUm] = meuArray[i]
+            meuArray[i] = aux
+        } 
+    }
+}
+console.log(meuArray)
+

@@ -8,4 +8,4 @@ para preparar estudantes e profissionais para o mercado de trabalho em áreas co
 Visão Geral do Repositório
 
 Este repositório contém material de estudo e exercícios práticos utilizados nas aulas de JavaScrpt ministradas pela Amontada Valley School. 
-O objetivo é fornecer aos alunos uma base sólida em programação Python, abrangendo desde conceitos básicos até tópicos mais avançados.
+O objetivo é fornecer aos alunos uma base sólida em programação JavaScript, abrangendo desde conceitos básicos até tópicos mais avançados.
